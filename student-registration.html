@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main-panel" >
+        <h1>Student Registration Form</h1>
+        <div class="row">
+            <div class="form-group">
+                <label>Student Name</label>
+                <input type="text" id="name" required />
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <input type="tel" required/>
+            </div>
+            <div class="form-group">
+                <label>Email id</label>
+                <input type="email"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label>Father Name</label>
+                <input type="text" required />
+            </div>
+            <div class="form-group">
+                <label>Mother Name</label>
+                <input type="text" required  />
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label>Select Class</label>
+                <div>
+                    <select>
+                        <option>Select...</option>
+                        <option>Class 1</option>
+                        <option>Class 2</option>
+                        <option>Class 3</option>
+                        <option>Class 4</option>
+                        <option>Class 5</option>
+                        <option>Class 6</option>
+                        <option>Class 7</option>
+                        <option>Class 8</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Date Of Birth</label>
+                <input type="date" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label>Gender</label>
+                <div>
+                    <input type="radio" name="g">
+                    Male
+                    <input type="radio" name="g">
+                    Female
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label>Student Photo</label>
+                <input type="file">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label>Select Language</label>
+                    <div>
+                        <input type="Checkbox" />
+                        Hndi
+                        <input type="Checkbox" />
+                        Urdu
+                        <input type="Checkbox" />
+                        Sanskrit
+                        <input type="Checkbox" />
+                        Other
+                    </div>
+                
+            </div>
+        </div>
+
+
+     
+
+        <div class="row">
+            <div class="form-group">
+                <label>Address</label>
+                <textarea style="height: 110px;"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </div>
+    <script>
+        // JavaScript for form submission
+        //const name2 = document.getElementById('name2').value;
+        document.getElementById('submit').addEventListener('click', function(event) {
+          event.preventDefault(); // Prevents the default form submission behavior
+          const name = document.getElementById('name').value;
+          alert(`Thank you, ${name} for registering with us.`);
+        });
+      </script>
+</body>
+
+</html>
